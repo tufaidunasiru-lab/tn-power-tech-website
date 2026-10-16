@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TN Power Tech | Electrical & Split AC Services in Ghana</title>
+  <meta name="description" content="TN Power Tech provides electrical installation, fault finding, split air conditioner installation and repair in Prang, Bono East, Ghana.">
+  <meta name="theme-color" content="#071a35">
+
+  <style>
+    :root {
+      --navy: #071a35;
+      --blue: #0879c9;
+      --cyan: #43d4f5;
+      --light: #f3f7fc;
+      --text: #17263b;
+      --muted: #617087;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+    }
+
+    a { text-decoration: none; }
+
+    .container {
+      width: min(1120px, 88%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: 0 3px 16px #0002;
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--white);
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: .4px;
+      white-space: nowrap;
+    }
+
+    .logo span { color: var(--cyan); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #f1f6ff;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--cyan); }
+
+    .hero {
+      color: var(--white);
+      background:
+        radial-gradient(ellipse at 90% 15%, #0879c955, transparent 38%),
+        linear-gradient(125deg, #071a35 20%, #0b3769 100%);
+      padding: 100px 0 95px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(36px, 6.5vw, 66px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      max-width: 640px;
+      color: #d8e7f8;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 47px;
+      padding: 12px 21px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: var(--cyan);
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      border: 1px solid #a9c5e5;
+    }
+
+    .btn:hover { filter: brightness(.94); }
+
+    .trust-strip {
+      background: var(--light);
+      padding: 20px 0;
+      border-bottom: 1px solid #e2eaf4;
+    }
+
+    .trust-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px 38px;
+      color: #294563;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    section { padding: 76px 0; }
+
+    .section-heading {
+      text-align: center;
+      max-width: 690px;
+      margin: 0 auto 38px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.2;
+      margin: 8px 0 12px;
+      color: var(--navy);
+    }
+
+    .section-heading p { color: var(--muted); }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 28px;
+      border: 1px solid #e0e8f2;
+      border-radius: 12px;
+      background: var(--white);
+      box-shadow: 0 8px 25px #092c5010;
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #e5f5ff;
+      color: #075fa4;
+      font-size: 25px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .card p { color: var(--muted); margin: 0; }
+
+    .about { background: var(--light); }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about h2 {
+      font-size: clamp(29px, 4vw, 40px);
+      line-height: 1.2;
+      color: var(--navy);
+    }
+
+    .about p { color: var(--muted); }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 22px 0 0;
+    }
+
+    .features li { margin: 12px 0; }
+
+    .features li::before {
+      content: "✓";
+      color: #0879c9;
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    .info-panel {
+      padding: 28px;
+      background: var(--navy);
+      border-radius: 14px;
+      color: white;
+    }
+
+    .info-panel h3 { margin-top: 0; font-size: 23px; }
+    .info-panel p { color: #d8e7f8; }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-heading h2 { color: white; }
+    .contact .section-heading p { color: #d8e7f8; }
+
+    .contact-details {
+      max-width: 520px;
+      margin: 28px auto 0;
+      padding: 22px;
+      border: 1px solid #ffffff30;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .contact-details p { margin: 8px 0; }
+
+    footer {
+      background: #041125;
+      color: #b9c9df;
+      padding: 22px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer p { margin: 5px 0; }
+
+    @media (max-width: 650px) {
+      .nav {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links { gap: 17px; flex-wrap: wrap; }
+      .nav-links a { font-size: 13px; }
+      .hero { padding: 70px 0; }
+      .cards, .about-layout { grid-template-columns: 1fr; }
+      section { padding: 58px 0; }
+      .card { padding: 23px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="TN Power Tech home">
+        TN <span>POWER TECH</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">Electrical • Split Air Conditioning</div>
+
+        <h1>Powering Your Space. Keeping You Comfortable.</h1>
+
+        <p>
+          TN Power Tech provides electrical installation, fault finding,
+          split AC installation and repair services for homes, shops,
+          offices and other properties.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#services">Explore Our Services</a>
+          <a class="btn btn-outline" href="#contact">Contact TN Power Tech</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container trust-content">
+        <span>✓ Practical Solutions</span>
+        <span>✓ Electrical Services</span>
+        <span>✓ Split AC Specialists</span>
+        <span>✓ Based in Ghana</span>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">What We Do</div>
+          <h2>Our Services</h2>
+          <p>
+            Electrical and air conditioning solutions to help your
+            property operate safely and comfortably.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Electrical Installation</h3>
+            <p>
+              Electrical wiring, lighting points, socket outlets,
+              switches and other residential or commercial installation work.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⌁</div>
+            <h3>Electrical Fault Finding</h3>
+            <p>
+              Inspection, testing and troubleshooting to help identify
+              electrical faults and installation problems.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">❄</div>
+            <h3>Split AC Installation</h3>
+            <p>
+              Installation and setup of split air conditioning systems
+              for homes, shops, offices and other suitable spaces.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔧</div>
+            <h3>Split AC Repair</h3>
+            <p>
+              Troubleshooting and repair of split AC problems,
+              with diagnosis based on the equipment and fault.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-layout">
+        <div>
+          <div class="eyebrow">About Our Work</div>
+          <h2>Reliable Workmanship. Practical Solutions.</h2>
+
+          <p>
+            TN Power Tech focuses on electrical services and split
+            air conditioning installation and repair. Each job starts
+            with understanding the customer's needs and the work required.
+          </p>
+
+          <ul class="features">
+            <li>Residential and commercial electrical work</li>
+            <li>Electrical troubleshooting and repairs</li>
+            <li>Split AC installation and fault diagnosis</li>
+            <li>Clear communication about the work required</li>
+          </ul>
+        </div>
+
+        <div class="info-panel">
+          <h3>Looking for an electrician or AC technician?</h3>
+          <p>
+            Get in touch to explain your project, discuss a fault,
+            or request a quotation for the work you need.
+          </p>
+          <a class="btn btn-primary" href="#contact">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Get In Touch</div>
+          <h2>Let's Discuss Your Project</h2>
+          <p>
+            Contact TN Power Tech about electrical installation,
+            electrical faults, split AC installation or split AC repair.
+          </p>
+        </div>
+
+        <div class="actions" style="justify-content:center">
+          <a class="btn btn-primary" id="whatsapp-link"
+             href="#contact-details" hidden>
+            Chat on WhatsApp
+          </a>
+          <a class="btn btn-outline" id="email-link"
+             href="#contact-details" hidden>
+            Send an Email
+          </a>
+        </div>
+
+        <div class="contact-details" id="contact-details">
+          <p><strong>Business:</strong> TN Power Tech</p>
+          <p><strong>Location:</strong> Prang, Bono East, Ghana</p>
+          <p id="phone-display">WhatsApp contact: To be added</p>
+          <p id="email-display">Business email: To be added</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> TN Power Tech</p>
+      <p>Electrical Services | Split AC Installation & Repair</p>
+      <p>Prang, Bono East, Ghana</p>
+    </div>
+  </footer>
+
+  <script>
+    /*
+      WEBSITE SETTINGS
+      Add your WhatsApp number and email when ready.
+
+      WhatsApp format: Ghana country code + number, without "+"
+      or the first zero. Example format: 233XXXXXXXXX
+    */
+    const BUSINESS_WHATSAPP = "";
+    const BUSINESS_EMAIL = "";
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    if (/^233\d{9}$/.test(BUSINESS_WHATSAPP)) {
+      const wa = document.getElementById("whatsapp-link");
+      wa.href = "https://wa.me/" + BUSINESS_WHATSAPP;
+      wa.hidden = false;
+      document.getElementById("phone-display").textContent =
+        "WhatsApp: +" + BUSINESS_WHATSAPP;
+    }
+
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(BUSINESS_EMAIL)) {
+      const email = document.getElementById("email-link");
+      email.href = "mailto:" + BUSINESS_EMAIL;
+      email.hidden = false;
+      document.getElementById("email-display").textContent =
+        "Email: " + BUSINESS_EMAIL;
+    }
+  </script>
+</body>
+</html>
